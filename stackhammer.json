@@ -1,0 +1,39 @@
+{
+  "metaVersion": "1.1.3",
+  "puppetVersion": "PUPPET27",
+  "environments": [
+    {
+      "siteLocation": "manifests",
+      "moduleLocations": [
+        "modules"
+      ],
+      "name": "production"
+    }
+  ],
+  "tests": [
+    {
+      "rakeFile": "modules/jenkins/Rakefile",
+      "rakeTask": "default",
+      "outputs": [],
+      "name": "apt_module"
+    },
+    {
+      "rakeFile": "modules/jenkins/Rakefile",
+      "rakeTask": "default",
+      "outputs": [],
+      "name": "jenkins_module"
+    },
+    {
+      "rakeFile": "modules/jenkins/Rakefile",
+      "rakeTask": "default",
+      "outputs": [],
+      "name": "stack"
+    },
+    {
+      "rakeFile": "modules/jenkins/Rakefile",
+      "rakeTask": "default",
+      "outputs": [],
+      "name": "stdlib_module"
+    }
+  ]
+}
